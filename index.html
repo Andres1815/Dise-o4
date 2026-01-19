@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        background-color: hsl(221, 100%, 96%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+      }
+      .padre {
+        width: 120vh;
+        height: 78vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 1px 1px 20px 1px black;
+      }
+      .hijo1 {
+        background: linear-gradient(
+          360deg,
+          hsl(252, 98%, 52%) 0%,
+          hsl(241, 89%, 64%) 83%,
+          rgb(99, 60, 255) 89%
+        );
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+      }
+      .titulo {
+        color: rgb(181, 184, 186);
+      }
+      .hijo1 h3 {
+        margin-top: 45px;
+      }
+      .hijo1 div {
+        padding: 40px;
+      }
+      .seccion {
+        text-align: center;
+        width: 30vh;
+        height: 26vh;
+        background-image: linear-gradient(0deg, hsl(243, 85%, 63%) 1%, rgb(72, 24, 216) 50%,  rgb(72, 24, 216) 100%);
+        border-radius: 40vh;
+        margin-top: 29px;
+        padding-bottom:4vh ;
+      }
+      section p {
+        margin-top: -5vh;
+        color: rgb(158, 158, 158);
+      }
+      .seccion-hijo .tex-cir {
+        margin-top: 1vh;
+        font-size: 80px;
+        color: white;
+      }
+      .tex3 {
+        color: white;
+      }
+      .hijo2 {
+        background-color: white;
+        border-radius: 30px;
+      }
+      .hijo2-1 {
+        margin-top: 45px;
+        margin-left: 3rem;
+        width: 50vh;
+      }
+
+      .botones {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .botones div {
+        margin: 10px;
+        padding: 1px;
+        gap: 2px;
+        border-radius: 9px;
+      }
+      .continue p {
+        margin-left: 1px;
+        width: 44vh;
+        background-color: hsl(224, 30%, 27%);
+        padding: 20px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 20px;
+        color: aliceblue;
+        margin-top: 5vh;
+      }
+      .iconos{
+        display: flex;
+        
+      }
+      .iconos img{
+        margin-left: 1pc;
+
+      }
+      .numeros p b{
+        text-align: right;
+      }
+      .numeros{
+        color: rgb(1, 3, 139);
+        width: 255px;
+        text-align: right;
+
+      }
+     
+      #rojo{
+        background-color: hsl(0, 100%, 92%);
+        color:hsl(0, 100%, 67%);
+      }
+      #amarillo{
+        background-color: hsl(40, 100%, 94%);
+        color: hsl(39, 100%, 56%);
+      }
+      #verde{
+        background-color: hsl(165, 100%, 94%);
+        color: hsl(166, 100%, 37%) ;
+      }
+      #azul{
+        background-color: hsl(234, 100%, 94%);
+        color: hsl(234, 85%, 45%);
+      }
+      #col-nume{
+        color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="padre">
+      <div class="hijo1">
+        <h3 class="titulo">Your Result</h3>
+        <section class="seccion">
+          <div class="seccion-hijo">
+            <h1 class="tex-cir">76</h1>
+            <p>of 100</p>
+          </div>
+        </section>
+        <div class="tex3">
+          <h1>Great</h1>
+          <p>
+            Your scored higher than 65% of <br />
+            the people who have taken <br />
+            these tests.
+          </p>
+        </div>
+      </div>
+      <div class="hijo2">
+        <div class="hijo2-1">
+          <h2>Sumary</h2>
+          <div class="botones">
+            <div id="rojo" class="iconos">
+              <img src="img/icon-reaction.svg" alt="">
+               <div id="Memory">
+               <p><b>Reaction</b></p>
+             </div>
+              <div class="numeros">
+                <p id="col-nume"> <b>92</b>/100</p>
+              </div>
+            </div>
+            <div id="amarillo" class="iconos">
+              <img src="img/icon-memory.svg" alt="">
+             <div class="Memory">
+               <p><b>Memory</b></p>
+             </div>
+              <div class="numeros">
+                <p id="col-nume"> <b>92</b>/100</p>
+              </div>
+            </div>
+            <div id="verde" class="iconos">
+              <img src="img/icon-verbal.svg" alt="">
+               <div class="Memory">
+               <p><b>Verbal</b></p>
+             </div>
+              <div class="numeros">
+                <p id="col-nume"> <b>92</b>/100</p>
+              </div>
+            </div>
+            <div id="azul" class="iconos">
+              <img src="img/icon-visual.svg" alt="">
+               <div class="Memory">
+               <p><b>Visual</b></p>
+             </div>
+              <div class="numeros">
+                <p id="col-nume"> <b>92</b>/100</p>
+              </div>
+            </div>
+          </div>
+          <div class="continue">
+            <p>Continue</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
